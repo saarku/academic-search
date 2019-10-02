@@ -15,6 +15,7 @@ The port number in 'SearchEngineServer.java' and the corresponding port number i
 2. Build and run the java server.
 - Build: javac -cp "./:src/:jar/*" src/SearchEngineServer.java
 - Run: java -cp "./:src/:jar/*" SearchEngineServer
+
 If successful, you should see a message "Gateway Server Started".
 
 3. Run the python server (server.py).
