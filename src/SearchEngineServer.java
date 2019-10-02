@@ -18,7 +18,7 @@ public class SearchEngineServer {
 	}
 	
  	public static void main(String[] args) throws IOException {
- 		int port_number = 25000;
+ 		int port_number = 26000;
 		GatewayServer gatewayServer = new GatewayServer(new SearchEngineServer(), port_number);
         gatewayServer.start();
         System.out.println("Gateway Server Started");
