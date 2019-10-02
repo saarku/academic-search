@@ -2,7 +2,7 @@
 
 A search engine toolkit (back-end and interface) for searching over research atricles.
 
-## General architecture:
+## General architecture
 
 The back-end search engine is written in Java using the open-sourced Lucene toolkit. 
 A seperate Python server recieves requests from the client, issue them to the Java back-end, and returns the result to the client.
