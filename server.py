@@ -126,11 +126,11 @@ class SearchEngineInterface():
 
 if __name__ == '__main__':
 
-    search_engine_port = 25000  # should be the same as in 'SearchEngineServer.java'
-    flask_port = 1200  # should be the same as in 'index.html'
+    search_engine_port = 26000  # should be the same as in 'SearchEngineServer.java'
+    flask_port = 8096  # should be the same as in 'index.html'
 
-    server = JavaGateway(gateway_parameters=GatewayParameters(port=25000))
+    server = JavaGateway(gateway_parameters=GatewayParameters(port=search_engine_port))
     sei = SearchEngineInterface()
     if not os.path.exists("logs"): os.mkdir("logs")
     sys.stdout = open("logs/" + str(time.time()) + ".log", "w")
-    app.run(host='0.0.0.0', port=1200)
+    app.run(host='0.0.0.0', port=flask_port)
