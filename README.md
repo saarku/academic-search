@@ -13,8 +13,8 @@ A seperate Python server recieves requests from the client, issue them to the Ja
 The port number in 'SearchEngineServer.java' and the corresponding port number in 'server.py' should be the same (Python-Java communication). Also, the port number in 'index.html' and the corresponding port in 'server.py' should be the same (Client-Server communication). The code is currently set to work locally. If you want to depoly this on a server, please modify the URL/IP in both 'index.html' and 'server.py'. (If you just downloaded this repository, probably everything is set correctly, unless one of the ports is occupied.)
 
 2. Build and run the java server.
-Build: javac -cp "./:src/:jar/*" src/SearchEngineServer.java
-Run: java -cp "./:src/:jar/*" SearchEngineServer
+- Build: javac -cp "./:src/:jar/*" src/SearchEngineServer.java
+- Run: java -cp "./:src/:jar/*" SearchEngineServer
 If successful, you should see a message "Gateway Server Started".
 
 3. Run the python server (server.py).
